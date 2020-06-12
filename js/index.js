@@ -71,8 +71,8 @@ function clickBtn() {
     }
   } else if (event.path[0].value === '=' && str.includes('/')) {
     let tmp = str.split('/');
-    if (parseInt(tmp[0]) === 0) {
-      inputCalc.value = 'ERROR';
+    if (parseInt(tmp[1]) === 0) {
+      inputCalc.value = 'Сannot be divided by "0"';
     } else {
       str = parseInt(tmp[0]) / parseInt(tmp[1]);
       inputCalc.value = str;
